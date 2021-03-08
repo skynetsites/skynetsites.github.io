@@ -2082,7 +2082,7 @@ h6, .h6, .fz-6 { font-size: 0.875rem; }
   .nshape-lg-alt-s2 { transform: translate(-50%, -50%) rotate(-30deg) scale(0.8); }
   .nshape-lg-alt-s3 { transform: translate(-50%, -50%) rotate(-135deg) scale(0.6); }
   .nshape-lg-alt-s4 { transform: translate(-50%, -50%) rotate(18deg) scale(0.6); } }
-@media (min-width: 1200px) { .body-boxed { padding: 50px; }
+@media (min-width: 1200px) { .body-boxed { /*padding: 50px;*/ }
   .gshape { opacity: 1; }
   .gshape-wrapper { opacity: 1; }
   .nshape-lg { transform: translate(-50%, -50%) scale(0.8); }
