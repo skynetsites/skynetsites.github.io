@@ -1,5 +1,5 @@
 var VERSION = '0.4.26'
-fetch('https://raw.githack.com/ethanaobrien/emulatorjs/main/data/version.json').then(response => {
+fetch('https://skynetsites.github.io/emulator/data/version.json').then(response => {
 	if (response.ok) {
 		response.text().then(body => {
 			var version = JSON.parse(body);
