@@ -31,7 +31,7 @@
             let queryString = window.location.search;
             let params = new URLSearchParams(queryString);
             params.delete('game');
-            params.append('game', $(this).value());
+            params.append('game', $(this).val());
             document.location.href = "?" + params.toString();
         });
     });
