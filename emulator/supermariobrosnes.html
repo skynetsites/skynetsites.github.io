@@ -28,6 +28,7 @@
              }); //close $.ajax(
             
             
+        });
     
     function gameUrlGet() {
         let queryString = window.location.search;
@@ -36,7 +37,6 @@
         params.append('game', document.getElementById("game").value);
         document.location.href = "?" + params.toString();
     }
-        });
 </script>
 </head>
 <body>
