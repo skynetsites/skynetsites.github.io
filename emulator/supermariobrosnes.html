@@ -26,21 +26,22 @@
                     //$("select").fadeIn("slow");
                 }
              }); //close $.ajax(
-         });
-    
-    function gameUrlGet() {
-        let queryString = window.location.search;
-        let params = new URLSearchParams(queryString);
-        params.delete('game');
-        params.append('game', document.getElementById("game").value);
-        document.location.href = "?" + params.toString();
-    }
+         
+        $("#game").change(function(){
+            let queryString = window.location.search;
+            let params = new URLSearchParams(queryString);
+            params.delete('game');
+            params.append('game', $(this).value());
+            document.location.href = "?" + params.toString();
+        });
+    });
+  
 </script>
 </head>
 <body>
 
 <div style="width:640px;height:480px;max-width:100%;margin:0 auto;">
-<select name="game" onchange="gameUrlGet()" id="game"></select>
+<select name="game" id="game"></select>
 <div id="player"></div>
 </div>
 
