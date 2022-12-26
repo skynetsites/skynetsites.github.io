@@ -27,20 +27,12 @@
                 }
              }); //close $.ajax(
         });
-    
-     function gameChangedTrigger () {
-        let queryString = window.location.search;  // get url parameters
-        let params = new URLSearchParams(queryString);  // create url search params object
-        params.delete('game');  // delete city parameter if it exists, in case you change the dropdown more then once
-        params.append('game', document.getElementById("game").value); // add selected city
-        document.location.href = "?" + params.toString(); // refresh the page with new url
-    }
 </script>
 </head>
 <body>
 
 <div style="width:640px;height:480px;max-width:100%;margin:0 auto;">
-<select name="game" onchange="gameChangedTrigger()" id="game"></select>
+<select name="game" onchange="getUrlVars()" id="game"></select>
 <div id="player"></div>
 </div>
 
@@ -51,15 +43,22 @@
     EJS_pathtodata = 'data/';
     EJS_player = '#player';
     EJS_biosUrl = '';
-    EJS_gameUrl = 'https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/' + game;
+    EJS_gameUrl = 'https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/' + game + '.zip';
     EJS_core = 'nes';
     EJS_onGameStart = function() {};
     
     function getUrlVars() {
+        let queryString = window.location.search;
+        let params = new URLSearchParams(queryString);
+        params.delete('game');
+        params.append('game', document.getElementById("game").value);
+        document.location.href = "?" + params.toString();
+        
         var vars = {};
         var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
             vars[key] = value;
         });
+        
         return vars;
     }
     
