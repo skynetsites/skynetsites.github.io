@@ -9,26 +9,7 @@
   src="https://code.jquery.com/jquery-3.6.3.js"
   integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
   crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(function(){
-        $("#tweets").fadeOut("fast");
-            $.ajax({
-                 type: "GET",
-                 url: "https://ia804509.us.archive.org/22/items/BestOfNes/BestOfNes_files.xml",
-                 dataType: "xml",
-                 success: function(xml) {
-                 
-                    $(xml).find("entry").each(function(){
-                         var file =  $(this).find("file").attr("name");
-                         $("<li></li>")
-                             .html(texto + " <a href=´" + link + "´>Ver tweet</a>")
-                             .appendTo("#tweets");
-                     }); //close each(
-                    $("#tweets").fadeIn("slow");
-                }
-             }); //close $.ajax(
-        });
-</script>
+    
 </head>
 <body>
 
@@ -51,6 +32,25 @@
 <style>
 html,body {margin:0;padding:0;}
 </style>
-
+<script type="text/javascript">
+        $(function(){
+        $("#tweets").fadeOut("fast");
+            $.ajax({
+                 type: "GET",
+                 url: "https://ia804509.us.archive.org/22/items/BestOfNes/BestOfNes_files.xml",
+                 dataType: "xml",
+                 success: function(xml) {
+                 
+                    $(xml).find("entry").each(function(){
+                         var file =  $(this).find("file").attr("name");
+                         $("<li></li>")
+                             .html(texto + " <a href=´" + link + "´>Ver tweet</a>")
+                             .appendTo("#tweets");
+                     }); //close each(
+                    $("#tweets").fadeIn("slow");
+                }
+             }); //close $.ajax(
+        });
+</script>
 </body>
 </html>
