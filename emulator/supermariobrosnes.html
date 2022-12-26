@@ -38,15 +38,16 @@
 
 <script type="text/javascript">
     function game(rom){
+        var rom = rom.value;
+    }
     
     EJS_pathtodata = 'data/';
     EJS_player = '#game';
     EJS_biosUrl = '';
-    EJS_gameUrl = 'https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/' + rom.value;
+    EJS_gameUrl = 'https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/' + rom;
     EJS_core = 'nes';
     EJS_onGameStart = function() {};
     
-    }
 </script>
 
 <script type="text/javascript" src="data/loader.js"></script>
