@@ -8,9 +8,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     
 <script type="text/javascript">
-    
-    var game = getUrlVars()["game"];
-        
     $(function(){
         //$("select").fadeOut("fast");
             $.ajax({
@@ -39,6 +36,8 @@
         params.delete('game');
         params.append('game', document.getElementById("game").value);
         document.location.href = "?" + params.toString();
+        
+        window.document.getElementById('game').selectedIndex = document.getElementById("game").value;
     }
 </script>
 </head>
