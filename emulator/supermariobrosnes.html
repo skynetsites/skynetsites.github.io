@@ -16,7 +16,7 @@
                  dataType: "xml",
                  success: function(xml) {
                  
-                    $(xml).find("entry").each(function(){
+                    $(xml).find("files").each(function(){
                          var file =  $(this).find("file").attr("name");
                          var exfile = file.split(".");
                         if(exfile[1]==zip){
