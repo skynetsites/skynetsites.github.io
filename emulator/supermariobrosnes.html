@@ -8,7 +8,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     
 <script type="text/javascript">
-        $(function(){
+    
+    var game = getUrlVars()["game"];
+        
+    $(function(){
         //$("select").fadeOut("fast");
             $.ajax({
                  type: "GET",
@@ -27,7 +30,7 @@
                 }
              }); //close $.ajax(
             
-            
+            $('#game option[value="' + game + '"]').attr("selected", true);
         });
     
     function gameUrlGet() {
