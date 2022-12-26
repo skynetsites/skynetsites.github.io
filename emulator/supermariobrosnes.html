@@ -20,7 +20,7 @@
                          var file =  $(this).attr("name");
                          var exfile = file.split(".");
                         if(exfile[1]=='zip' || exfile[1]=='nes'){
-                         $("#game").append('<option value="' + file + '">' + exfile[0] + '</option>');
+                         $("#game").append('<option value="' + exfile[0] + '"  rel="' + exfile[1] + '">' + exfile[0] + '</option>');
                         }
                      }); //close each(
                     //$("select").fadeIn("slow");
@@ -30,9 +30,12 @@
         $("#game").change(function(){
             let queryString = window.location.search;
             let params = new URLSearchParams(queryString);
+            let params2 = new URLSearchParams(queryString);
             params.delete('game');
             params.append('game', $(this).val());
-            document.location.href = "?" + params.toString();
+            params2.delete('ext');
+            params2.append('ext', $(this).attr('rel'));
+            document.location.href = "?" + params.toString() + "&" + params2.toString();
         });
     });
   
