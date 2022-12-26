@@ -20,7 +20,7 @@
                          var file =  $(this).attr("name");
                          var exfile = file.split(".");
                         if(exfile[1]=='zip'){
-                         $("#tweets").append('<li><a href="?game=' + exfile[0] + '">' + file + '</a></li>');
+                         $("#tweets").append('<li><a href="?game=' + exfile[0] + '">' + exfile[0] + '</a></li>');
                         }
                      }); //close each(
                     //$("#tweets").fadeIn("slow");
