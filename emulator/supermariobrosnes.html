@@ -9,7 +9,7 @@
     
 <script type="text/javascript">
         $(function(){
-        //$("#tweets").fadeOut("fast");
+        //$("select").fadeOut("fast");
             $.ajax({
                  type: "GET",
                  url: "https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/BestOfNes_files.xml",
@@ -20,10 +20,10 @@
                          var file =  $(this).attr("name");
                          var exfile = file.split(".");
                         if(exfile[1]=='zip'){
-                         $("#tweets").append('<li><a href="?game=' + exfile[0] + '">' + exfile[0] + '</a></li>');
+                         $("select").append('<option value="' + file + '">' + exfile[0] + '</option>');
                         }
                      }); //close each(
-                    //$("#tweets").fadeIn("slow");
+                    //$("select").fadeIn("slow");
                 }
              }); //close $.ajax(
         });
@@ -32,26 +32,20 @@
 <body>
 
 <div style="width:640px;height:480px;max-width:100%;margin:0 auto;">
-<ul id="tweets"></ul>   
+<select onchange="game(this);"></select>
 <div id="game"></div>
 </div>
 
 <script type="text/javascript">
-    var game = getUrlVars()["game"];
+    function game(rom){
     
     EJS_pathtodata = 'data/';
     EJS_player = '#game';
     EJS_biosUrl = '';
-    EJS_gameUrl = 'https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/' + game + '.zip';
+    EJS_gameUrl = 'https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/' + rom.value;
     EJS_core = 'nes';
     EJS_onGameStart = function() {};
     
-    function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-    });
-    return vars;
     }
 </script>
 
