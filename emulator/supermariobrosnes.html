@@ -34,7 +34,7 @@
             params.delete('game');
             params.append('game', $(this).val());
             params2.delete('ext');
-            params2.append('ext', $(this + ' option:selected').attr('rel'));
+            params2.append('ext', $(this + ' option').attr('rel'));
             document.location.href = "?" + params.toString() + "&" + params2.toString();
         });
     });
