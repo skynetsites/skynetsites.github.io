@@ -7,6 +7,29 @@
     <title>Super Mario Bros - NES</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     
+<script type="text/javascript">
+        $(function(){
+        $("#tweets").fadeOut("fast");
+            $.ajax({
+                 type: "GET",
+                 url: "https://skynetsites.github.io/emulator/BestOfNes_files.xml",
+                 dataType: "xml",
+                 success: function(xml) {
+                 
+                    $(xml).find("entry").each(function(){
+                         var file =  $(this).find("file").attr("name");
+                         var exfile = file.split(".");
+                        if(exfile[1]==zip){
+                         $("<li></li>")
+                             .html(texto + " <a href=´" + link + "´>Ver tweet</a>")
+                             .appendTo("#tweets");
+                        }
+                     }); //close each(
+                    $("#tweets").fadeIn("slow");
+                }
+             }); //close $.ajax(
+        });
+</script>
 </head>
 <body>
 
@@ -29,28 +52,5 @@
 <style>
 html,body {margin:0;padding:0;}
 </style>
-<script type="text/javascript">
-        $(function(){
-        $("#tweets").fadeOut("fast");
-            $.ajax({
-                 type: "GET",
-                 url: "BestOfNes_files.xml",
-                 dataType: "xml",
-                 success: function(xml) {
-                 
-                    $(xml).find("entry").each(function(){
-                         var file =  $(this).find("file").attr("name");
-                         var exfile = file.split(".");
-                        if(exfile[1]==zip){
-                         $("<li></li>")
-                             .html(texto + " <a href=´" + link + "´>Ver tweet</a>")
-                             .appendTo("#tweets");
-                        }
-                     }); //close each(
-                    $("#tweets").fadeIn("slow");
-                }
-             }); //close $.ajax(
-        });
-</script>
 </body>
 </html>
