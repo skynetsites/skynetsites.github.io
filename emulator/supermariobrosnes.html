@@ -32,7 +32,7 @@
             let params = new URLSearchParams(queryString);
             params.delete('game');
             params.append('game', $(this).val());
-            document.location.href = "#" + params.toString();
+            document.location.href = "?" + params.toString();
         });
     });
   
@@ -58,7 +58,7 @@
     
     function getUrlVars() {
         var vars = {};
-        var parts = window.location.href.replace(/[#&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
             vars[key] = value;
         });
         
