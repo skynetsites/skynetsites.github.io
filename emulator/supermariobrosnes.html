@@ -26,6 +26,16 @@
                     //$("select").fadeIn("slow");
                 }
              }); //close $.ajax(
+            
+            
+    
+    function gameUrlGet() {
+        let queryString = window.location.search;
+        let params = new URLSearchParams(queryString);
+        params.delete('game');
+        params.append('game', document.getElementById("game").value);
+        document.location.href = "?" + params.toString();
+    }
         });
 </script>
 </head>
@@ -54,14 +64,6 @@
         });
         
         return vars;
-    }
-    
-    function gameUrlGet() {
-        let queryString = window.location.search;
-        let params = new URLSearchParams(queryString);
-        params.delete('game');
-        params.append('game', document.getElementById("game").value);
-        document.location.href = "?" + params.toString();
     }
     
 </script>
