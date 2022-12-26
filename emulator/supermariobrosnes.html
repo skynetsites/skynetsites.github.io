@@ -32,21 +32,28 @@
 <body>
 
 <div style="width:640px;height:480px;max-width:100%;margin:0 auto;">
-<select onchange="game(this);"></select>
+<select onchange="location = this.value;"></select>
 <div id="game"></div>
 </div>
 
 <script type="text/javascript">
-    function game(rom){
-        var rom = rom.value;
-    }
+    
+    var game = getUrlVars()["game"];
     
     EJS_pathtodata = 'data/';
     EJS_player = '#game';
     EJS_biosUrl = '';
-    EJS_gameUrl = 'https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/' + rom;
+    EJS_gameUrl = 'https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/' + game;
     EJS_core = 'nes';
     EJS_onGameStart = function() {};
+    
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
     
 </script>
 
