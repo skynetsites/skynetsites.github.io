@@ -20,9 +20,7 @@
                          var file =  $(this).find("file").attr("name");
                          var exfile = file.split(".");
                         if(exfile[1]==zip){
-                         $("<li></li>")
-                             .html(texto + " <a href=´" + link + "´>Ver tweet</a>")
-                             .appendTo("#tweets");
+                         $("#tweets").append("<li>" + file + "</li>");
                         }
                      }); //close each(
                     //$("#tweets").fadeIn("slow");
