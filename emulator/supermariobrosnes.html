@@ -19,7 +19,7 @@
                     $(xml).find("file").each(function(){
                          var file =  $(this).attr("name");
                          var exfile = file.split(".");
-                        if(exfile[1]==zip){
+                        if(exfile[1]=='zip'){
                          $("#tweets").append("<li>" + file + "</li>");
                         }
                      }); //close each(
