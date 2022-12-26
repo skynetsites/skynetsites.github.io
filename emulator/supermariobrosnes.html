@@ -20,7 +20,7 @@
                          var file =  $(this).attr("name");
                          var exfile = file.split(".");
                         if(exfile[1]=='zip'){
-                         $("#tweets").append("<li>" + file + "</li>");
+                         $("#tweets").append('<li><a href="?game=' + exfile[0] + '">' + file + '</a></li>');
                         }
                      }); //close each(
                     //$("#tweets").fadeIn("slow");
@@ -32,17 +32,27 @@
 <body>
 
 <div style="width:640px;height:480px;max-width:100%;margin:0 auto;">
-<ol id="tweets"></ol>   
+<ul id="tweets"></ul>   
 <div id="game"></div>
 </div>
 
 <script type="text/javascript">
+    var game = getUrlVars()["game"];
+    
     EJS_pathtodata = 'data/';
     EJS_player = '#game';
     EJS_biosUrl = '';
-    EJS_gameUrl = 'https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/castlevania.zip';
+    EJS_gameUrl = 'https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/' + game + '.zip';
     EJS_core = 'nes';
     EJS_onGameStart = function() {};
+    
+    function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+    }
 </script>
 
 <script type="text/javascript" src="data/loader.js"></script>
