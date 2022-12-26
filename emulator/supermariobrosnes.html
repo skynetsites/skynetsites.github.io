@@ -19,8 +19,8 @@
                     $(xml).find("file").each(function(){
                          var file =  $(this).attr("name");
                          var exfile = file.split(".");
-                        if(exfile[1]=='zip'){
-                         $("#game").append('<option value="' + exfile[0] + '">' + exfile[0] + '</option>');
+                        if(exfile[1]=='zip' || exfile[1]=='nes'){
+                         $("#game").append('<option value="' + file + '">' + exfile[0] + '</option>');
                         }
                      }); //close each(
                     //$("select").fadeIn("slow");
@@ -53,7 +53,7 @@
     EJS_pathtodata = 'data/';
     EJS_player = '#player';
     EJS_biosUrl = '';
-    EJS_gameUrl = 'https://ia801806.us.archive.org/cors_get.php?path=/3/items/nes-romset-ultra-us/' + game + '.zip';
+    EJS_gameUrl = 'https://ia801806.us.archive.org/cors_get.php?path=/3/items/nes-romset-ultra-us/' + game;
     //EJS_gameUrl = 'https://ia600608.us.archive.org/cors_get.php?path=/26/items/FCWIN98/FC-WIN98.NES';
     EJS_core = 'nes';
     EJS_onGameStart = function() {};
