@@ -20,7 +20,7 @@
                          var file =  $(this).attr("name");
                          var exfile = file.split(".");
                         if(exfile[1]=='zip'){
-                         $("select").append('<option value="' + file + '">' + exfile[0] + '</option>');
+                         $("select").append('<option value="' + exfile[0] + '">' + exfile[0] + '</option>');
                         }
                      }); //close each(
                     //$("select").fadeIn("slow");
@@ -32,7 +32,7 @@
 <body>
 
 <div style="width:640px;height:480px;max-width:100%;margin:0 auto;">
-<select onchange="location = this.value;"></select>
+<select onchange="location = supermariobrosnes.html"' + this.value  + '"></select>
 <div id="game"></div>
 </div>
 
