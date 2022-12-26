@@ -17,7 +17,7 @@
                  success: function(xml) {
                  
                     $(xml).find("files").each(function(){
-                         var file =  $(this).find("file").attr("name");
+                         var file =  $("file").attr("name");
                          //var exfile = file.split(".");
                         //if(exfile[1]==zip){
                          $("#tweets").append("<li>" + file + "</li>");
