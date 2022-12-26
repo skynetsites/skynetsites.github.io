@@ -65,7 +65,8 @@
         return vars;
     }
     
-    window.document.getElementById('game').selectedIndex = game;
+    const $select = document.querySelector('#game');
+    $select.value = game;
     
 </script>
 
