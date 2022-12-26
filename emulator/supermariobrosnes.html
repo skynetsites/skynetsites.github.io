@@ -36,8 +36,6 @@
         params.delete('game');
         params.append('game', document.getElementById("game").value);
         document.location.href = "?" + params.toString();
-        
-        window.document.getElementById('game').selectedIndex = document.getElementById("game").value;
     }
 </script>
 </head>
@@ -67,6 +65,8 @@
         
         return vars;
     }
+    
+    window.document.getElementById('game').selectedIndex = game;
     
 </script>
 
