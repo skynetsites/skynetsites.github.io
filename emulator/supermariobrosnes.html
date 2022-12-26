@@ -9,10 +9,10 @@
     
 <script type="text/javascript">
         $(function(){
-        $("#tweets").fadeOut("fast");
+        //$("#tweets").fadeOut("fast");
             $.ajax({
                  type: "GET",
-                 url: "https://skynetsites.github.io/emulator/BestOfNes_files.xml",
+                 url: "https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/BestOfNes_files.xml",
                  dataType: "xml",
                  success: function(xml) {
                  
@@ -25,7 +25,7 @@
                              .appendTo("#tweets");
                         }
                      }); //close each(
-                    $("#tweets").fadeIn("slow");
+                    //$("#tweets").fadeIn("slow");
                 }
              }); //close $.ajax(
         });
