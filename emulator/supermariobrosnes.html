@@ -41,7 +41,7 @@
 
 <div style="width:640px;height:480px;max-width:100%;margin:0 auto;">
 <select name="game" onchange="gameChangedTrigger()" id="game"></select>
-<div id="game"></div>
+<div id="player"></div>
 </div>
 
 <script type="text/javascript">
@@ -49,7 +49,7 @@
     var game = getUrlVars()["game"];
     
     EJS_pathtodata = 'data/';
-    EJS_player = '#game';
+    EJS_player = '#player';
     EJS_biosUrl = '';
     EJS_gameUrl = 'https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/' + game;
     EJS_core = 'nes';
