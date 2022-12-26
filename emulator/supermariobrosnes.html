@@ -12,14 +12,14 @@
         //$("select").fadeOut("fast");
             $.ajax({
                  type: "GET",
-                 url: "https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/BestOfNes_files.xml",
+                 url: "https://ia803400.us.archive.org/cors_get.php?path=/23/items/blaster-master-quadrant-blaster-master-modification-1.3/blaster-master-quadrant-blaster-master-modification-1.3_files.xml",
                  dataType: "xml",
                  success: function(xml) {
                  
                     $(xml).find("file").each(function(){
                          var file =  $(this).attr("name");
                          var exfile = file.split(".");
-                        if(exfile[1]=='zip'){
+                        if(exfile[1]=='nes'){
                          $("#game").append('<option value="' + exfile[0] + '">' + exfile[0] + '</option>');
                         }
                      }); //close each(
@@ -53,8 +53,8 @@
     EJS_pathtodata = 'data/';
     EJS_player = '#player';
     EJS_biosUrl = '';
-    //EJS_gameUrl = 'https://ia904509.us.archive.org/cors_get.php?path=/22/items/BestOfNes/' + game + '.zip';
-    EJS_gameUrl = 'https://ia600608.us.archive.org/cors_get.php?path=/26/items/FCWIN98/FC-WIN98.NES';
+    EJS_gameUrl = 'https://ia803400.us.archive.org/cors_get.php?path=/23/items/blaster-master-quadrant-blaster-master-modification-1.3/' + game + '.nes';
+    //EJS_gameUrl = 'https://ia600608.us.archive.org/cors_get.php?path=/26/items/FCWIN98/FC-WIN98.NES';
     EJS_core = 'nes';
     EJS_onGameStart = function() {};
     
