@@ -20,7 +20,7 @@
                          var file =  $(this).attr("name");
                          var exfile = file.split(".");
                         if(exfile[1]=='zip'){
-                         $("select").append('<option value="' + exfile[0] + '">' + exfile[0] + '</option>');
+                         $("#game").append('<option value="' + exfile[0] + '">' + exfile[0] + '</option>');
                         }
                      }); //close each(
                     //$("select").fadeIn("slow");
