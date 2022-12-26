@@ -32,7 +32,7 @@
 <body>
 
 <div style="width:640px;height:480px;max-width:100%;margin:0 auto;">
-<select name="game" onchange="getUrlVars()" id="game"></select>
+<select name="game" onchange="gameUrlGet()" id="game"></select>
 <div id="player"></div>
 </div>
 
@@ -48,18 +48,20 @@
     EJS_onGameStart = function() {};
     
     function getUrlVars() {
-        let queryString = window.location.search;
-        let params = new URLSearchParams(queryString);
-        params.delete('game');
-        params.append('game', document.getElementById("game").value);
-        document.location.href = "?" + params.toString();
-        
         var vars = {};
         var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
             vars[key] = value;
         });
         
         return vars;
+    }
+    
+    function gameUrlGet() {
+        let queryString = window.location.search;
+        let params = new URLSearchParams(queryString);
+        params.delete('game');
+        params.append('game', document.getElementById("game").value);
+        document.location.href = "?" + params.toString();
     }
     
 </script>
