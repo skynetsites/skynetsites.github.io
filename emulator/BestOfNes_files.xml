@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="1942.zip" source="original">
+    <mtime>1629514820</mtime>
+    <size>25189</size>
+    <md5>b60443f710dbeb3c3dba1a6defe4e7ad</md5>
+    <crc32>9be2af47</crc32>
+    <sha1>3303a08da355366529d9d48308960ad1778940a2</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514830</viruscheck>
+  </file>
+  <file name="BestOfNes_archive.torrent" source="metadata">
+    <btih>f574a442c9e9a9f6d2e098254e2da0b736324741</btih>
+    <mtime>1630944414</mtime>
+    <size>10046</size>
+    <md5>bdfe712545678ff4f63b654f942276ba</md5>
+    <crc32>8f7e8d2c</crc32>
+    <sha1>21081a77f014fc67317b56b21c65b51857d875fd</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="BestOfNes_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>ce8c081637750c86347d7871ca77cf20</md5>
+    <summation>md5</summation>
+  </file>
+  <file name="BestOfNes_meta.sqlite" source="original">
+    <mtime>1629515441</mtime>
+    <size>122880</size>
+    <md5>0690c979244e921553c146b824f23c06</md5>
+    <crc32>8cb38a04</crc32>
+    <sha1>237379a8cb08cd972c4a4d530e45cc85f1239931</sha1>
+    <format>Metadata</format>
+  </file>
+  <file name="BestOfNes_meta.xml" source="original">
+    <mtime>1630944413</mtime>
+    <size>623</size>
+    <md5>3709b5e6da0d76fba50089f8d2e4771c</md5>
+    <crc32>3dda83d8</crc32>
+    <sha1>bda18d4f1e6019da834dd0af795c5cca9552dbfe</sha1>
+    <format>Metadata</format>
+  </file>
+  <file name="balloonfight.zip" source="original">
+    <mtime>1629514823</mtime>
+    <size>15627</size>
+    <md5>4e38dae37eecae073d72f1b973ad5f87</md5>
+    <crc32>c7a3c51f</crc32>
+    <sha1>362df2c0480acb331c66352e85e19a0be126e0e9</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="batmanthevideogame.zip" source="original">
+    <mtime>1629514837</mtime>
+    <size>152199</size>
+    <md5>af10dd2e3af694141cbf936137ffcad9</md5>
+    <crc32>09e7caa5</crc32>
+    <sha1>39ae9e6ad891ac06cb5e6b4e8306a1d949ec61b2</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="battletoads.zip" source="original">
+    <mtime>1629514849</mtime>
+    <size>187054</size>
+    <md5>40feff4fa36079a39b7f4e84c4e2d5a2</md5>
+    <crc32>3f71ac24</crc32>
+    <sha1>8fa7d885bfcc16619527546128909edf7e86c063</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="bomberman.zip" source="original">
+    <mtime>1629514852</mtime>
+    <size>15917</size>
+    <md5>e7dac55af0cd1dd208ddc83cbb9588a4</md5>
+    <crc32>be9c618a</crc32>
+    <sha1>2fe184738b001e3d0d08933531f9360f7901b29a</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="bubblebobble.zip" source="original">
+    <mtime>1629514855</mtime>
+    <size>48511</size>
+    <md5>e8e32149fb9c3b9c01d70e44cac23307</md5>
+    <crc32>e7257b73</crc32>
+    <sha1>b395161e7b5cd1e1fc4714fe869272b47d0d57c1</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="castlevania.zip" source="original">
+    <mtime>1629514860</mtime>
+    <size>64279</size>
+    <md5>cb2b6d864fbbe2bf5c21dad986e506b2</md5>
+    <crc32>601e3e9e</crc32>
+    <sha1>dae24d7efb093fdf78bc694b9bc488799109ec46</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="castlevania2simonsquest.zip" source="original">
+    <mtime>1629514862</mtime>
+    <size>75586</size>
+    <md5>577b55a9db7dfd16595ccd96253381fe</md5>
+    <crc32>ff5ed412</crc32>
+    <sha1>936e1987feba4b9217b3b690d46e5b0b5528c433</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="castlevania3draculascurse.zip" source="original">
+    <mtime>1629514866</mtime>
+    <size>241161</size>
+    <md5>0a15fdb8f220fa5e18fd7035483fb286</md5>
+    <crc32>087648d3</crc32>
+    <sha1>4980ee624bceace3da9adde9fedb756daf5b108e</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="chipndalerescuerangers.zip" source="original">
+    <mtime>1629514874</mtime>
+    <size>140953</size>
+    <md5>f2757e01b2fe26d2285440af4437bc96</md5>
+    <crc32>54778fdb</crc32>
+    <sha1>5cf480acb85fb25df081b2d3b95cd6079d43c88c</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="contra.zip" source="original">
+    <mtime>1629514877</mtime>
+    <size>88631</size>
+    <md5>254e0d3aada270b97de12565092e59ed</md5>
+    <crc32>420fa683</crc32>
+    <sha1>d3df45d90c69587929be79a42f5199239870cb8f</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="contraforce.zip" source="original">
+    <mtime>1629514885</mtime>
+    <size>163594</size>
+    <md5>1c0f377c53f2b17646d036d60ee291d2</md5>
+    <crc32>4641ae5d</crc32>
+    <sha1>bde634b0b1396809ccd5a996772d263bd0b0dcf7</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="disneysducktales.zip" source="original">
+    <mtime>1629514890</mtime>
+    <size>82019</size>
+    <md5>c3f2902ade73139a5940c1370c6af9ae</md5>
+    <crc32>5866f65e</crc32>
+    <sha1>9afa1ff45348c175b7d3364a1a81b76d9a446344</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="donkeykong.zip" source="original">
+    <mtime>1629514893</mtime>
+    <size>15956</size>
+    <md5>320415c2a6f928fd218a74ca50b999c2</md5>
+    <crc32>b37839fb</crc32>
+    <sha1>9e91d859a18dc864b41bf33fcd5b2264c6e985fc</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="doubledragon.zip" source="original">
+    <mtime>1629514897</mtime>
+    <size>137621</size>
+    <md5>6836234f264c8da3a13fd14bdc4487e1</md5>
+    <crc32>5d556c3b</crc32>
+    <sha1>890f236312ad2033b115fb4f8cb56d303999e6f4</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="doubledragon2therevenge.zip" source="original">
+    <mtime>1629514902</mtime>
+    <size>144172</size>
+    <md5>25ccf35656d7ee10999f08baaa9bb15f</md5>
+    <crc32>dfa9a199</crc32>
+    <sha1>456eabfb64e032709c3bfe3ad03ab8ffb9c0c2a2</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="doubledragon3thesacredstones.zip" source="original">
+    <mtime>1629514910</mtime>
+    <size>146387</size>
+    <md5>946936cbe81a475b4173d7b08cdbe630</md5>
+    <crc32>f25d7d62</crc32>
+    <sha1>441fd7e0b4eb11cff2823b568169e54c1c8bc453</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="dragonwarrior.zip" source="original">
+    <mtime>1629514916</mtime>
+    <size>50531</size>
+    <md5>d8ed4316c6a62e0f1f2608932cafe166</md5>
+    <crc32>9c6a72c6</crc32>
+    <sha1>fabb8977867279b20bb2a04adfac0f42eec5335d</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="drmario.zip" source="original">
+    <mtime>1629514921</mtime>
+    <size>28830</size>
+    <md5>3e340f5a0beeb1eee303ace350c9253e</md5>
+    <crc32>f1a2cec3</crc32>
+    <sha1>b4ba6f37f5f1e3e2f76a3672ba5220ece2209ef4</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="duckhunt.zip" source="original">
+    <mtime>1629514928</mtime>
+    <size>15851</size>
+    <md5>773a8b444799a1acc44896f8068d74eb</md5>
+    <crc32>36d06428</crc32>
+    <sha1>6f3a37292f23134d3e0a3c63bd7e1722fab362ce</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="earthbound.zip" source="original">
+    <mtime>1629514940</mtime>
+    <size>225819</size>
+    <md5>dd56de82e316c48e7dcbc611783b369b</md5>
+    <crc32>7c6d8bdf</crc32>
+    <sha1>62273cdfe9cd0b425d41762e9de2a8e1c492d3b0</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629514988</viruscheck>
+  </file>
+  <file name="excitebike.zip" source="original">
+    <mtime>1629514976</mtime>
+    <size>17224</size>
+    <md5>cd27db4e25c0d61b9fb696b089a92822</md5>
+    <crc32>3ff250a6</crc32>
+    <sha1>b58adc04924cff570ac14d55e11a4b434bcef2c2</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="finalfantasy.zip" source="original">
+    <mtime>1629514980</mtime>
+    <size>143822</size>
+    <md5>d540140d928e9e3bc5a939f99231fb4b</md5>
+    <crc32>e8e72ed0</crc32>
+    <sha1>a504e7101d1643e4905013c04c4bd234d97412bf</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="ghostsngoblins.zip" source="original">
+    <mtime>1629514988</mtime>
+    <size>57151</size>
+    <md5>baa5c431163a8706fec16ae5b6710a1d</md5>
+    <crc32>99bddcb2</crc32>
+    <sha1>3450b58056c821eb8b405fb5d8dae3669ab61659</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="iceclimber.zip" source="original">
+    <mtime>1629514993</mtime>
+    <size>17796</size>
+    <md5>abb56ffe2fbb80d74de052b4969cec8b</md5>
+    <crc32>681a7cec</crc32>
+    <sha1>d9c06271e07450ec15613736125e5b23ee60253b</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="kirbysadventure.zip" source="original">
+    <mtime>1629515006</mtime>
+    <size>480470</size>
+    <md5>afc85afc448ea33ba0101b7d3433907b</md5>
+    <crc32>ff7f934b</crc32>
+    <sha1>1381b4cc1dc40949d4d17059b7f88ea6efab4c59</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="legendofzelda.zip" source="original">
+    <mtime>1629515017</mtime>
+    <size>64482</size>
+    <md5>0f9562d6e61a6b9c63dca33ccbf29330</md5>
+    <crc32>1044cd3a</crc32>
+    <sha1>666fefce74497c413777a55ec2f538ddc2f3bde1</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="megaman.zip" source="original">
+    <mtime>1629515025</mtime>
+    <size>77132</size>
+    <md5>7e76fbd510f0468216755e83de1d6b9a</md5>
+    <crc32>1549a61a</crc32>
+    <sha1>0eddcb11f57e03e20951a17b4f666cd799db5423</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="megaman2.zip" source="original">
+    <mtime>1629515033</mtime>
+    <size>132094</size>
+    <md5>48df78374f57b12c5bb5a2dfb89b8a98</md5>
+    <crc32>5ec20ea3</crc32>
+    <sha1>bb5748e7ef10a93fe1e2165aa544c8d10ffbcda3</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="megaman3.zip" source="original">
+    <mtime>1629515042</mtime>
+    <size>216295</size>
+    <md5>6ae739f698c92c8b62c8b12754dd1edc</md5>
+    <crc32>187f233b</crc32>
+    <sha1>962876b3c48bca4e04a3156e60eaf53d9b6bbc0c</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="megaman4.zip" source="original">
+    <mtime>1629515046</mtime>
+    <size>287460</size>
+    <md5>e1efe72a5bca68f3fb4810c7a5849082</md5>
+    <crc32>e0a0b0a9</crc32>
+    <sha1>61325fa017baf927ba13d665154b8dd2071efaf1</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="megaman5.zip" source="original">
+    <mtime>1629515050</mtime>
+    <size>259461</size>
+    <md5>fbfed5627ca8b13a73a92d08027c696c</md5>
+    <crc32>136022ce</crc32>
+    <sha1>1ceaf9d1f179e14f275f8a8991836e2c42b30888</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="megaman6.zip" source="original">
+    <mtime>1629515056</mtime>
+    <size>254150</size>
+    <md5>ef289aec04fc5d9b8ee2ff1d57226ee9</md5>
+    <crc32>44e73f30</crc32>
+    <sha1>aee7e4b3ee07fb0b729b0342aa1f9fabfc2ee560</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="metalgear.zip" source="original">
+    <mtime>1629515061</mtime>
+    <size>78194</size>
+    <md5>4daa61d8ee6f96ff3c086abd36c5fd98</md5>
+    <crc32>56445318</crc32>
+    <sha1>68ad8125403714c5c1106c8fc83352f36c0b76f7</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="metroid.zip" source="original">
+    <mtime>1629515064</mtime>
+    <size>58910</size>
+    <md5>b0dcff2a06e785627504a76f0a76859f</md5>
+    <crc32>9f91150e</crc32>
+    <sha1>79123d4ac711d7963e2ae7080dac0167163aeeeb</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="miketysonspunchout.zip" source="original">
+    <mtime>1629515070</mtime>
+    <size>130246</size>
+    <md5>03c6c51432aa4a3cc657d5f5e53a7d6a</md5>
+    <crc32>46190a54</crc32>
+    <sha1>58b3e9e983a43a952fea90e99d9876d9bb29bcc7</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="ninjagaiden.zip" source="original">
+    <mtime>1629515074</mtime>
+    <size>138406</size>
+    <md5>463561dd596e2f1d17a5cb27b8887229</md5>
+    <crc32>727e3951</crc32>
+    <sha1>373bed5692d836f8de449d48de58a928c35671b8</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="pacman.zip" source="original">
+    <mtime>1629515077</mtime>
+    <size>11270</size>
+    <md5>dc215431b446d6c398b461cd32fb2158</md5>
+    <crc32>b2fe4419</crc32>
+    <sha1>02dcb3dfcac79d2f990357534f9289dcb7b99b1d</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="popeye.zip" source="original">
+    <mtime>1629515080</mtime>
+    <size>16317</size>
+    <md5>4216e72409b5400edbb279142811ca0d</md5>
+    <crc32>24aab104</crc32>
+    <sha1>1e8b018b1bf5fd6b2ffa84ca1e10156e89ffe35b</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="superc.zip" source="original">
+    <mtime>1629515088</mtime>
+    <size>145203</size>
+    <md5>3b7621f30ebc2117d17e1d2accb31962</md5>
+    <crc32>c609e62d</crc32>
+    <sha1>69956129fcef6787f3d747aff820951a5fefc460</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="supermariobros.zip" source="original">
+    <mtime>1629515393</mtime>
+    <size>31012</size>
+    <md5>d83d9d6f34b91050e330c27909f7f27f</md5>
+    <crc32>b362db44</crc32>
+    <sha1>408799747f302f6fe68c0acc8f16d40ef8dbe122</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="supermariobros2.zip" source="original">
+    <mtime>1629515398</mtime>
+    <size>76247</size>
+    <md5>5009a34fcf7000789bf2f410c8151439</md5>
+    <crc32>9141925d</crc32>
+    <sha1>218329430186a1b1becebbc2ae586278de884c79</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="supermariobros3.zip" source="original">
+    <mtime>1629515404</mtime>
+    <size>222143</size>
+    <md5>8baed1303981b615be093cfa78588026</md5>
+    <crc32>a5fae97d</crc32>
+    <sha1>0cc90296c86cc35ab4a9419904e6441c057f6c99</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="teenagemutantninjaturtles.zip" source="original">
+    <mtime>1629515408</mtime>
+    <size>142461</size>
+    <md5>ed9214f53487d742a82f060ba87b3636</md5>
+    <crc32>8f35f146</crc32>
+    <sha1>b2f54ea3584fe141ef40e884473aca07b6239c01</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="teenagemutantninjaturtles2thearcadegame.zip" source="original">
+    <mtime>1629515413</mtime>
+    <size>252687</size>
+    <md5>5a8871d2d4ca8683e164d1705dd1e478</md5>
+    <crc32>5b3c9b21</crc32>
+    <sha1>b89c02acc27bd300c2604ad5d9209b06b238fb0d</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="tetris.zip" source="original">
+    <mtime>1629515421</mtime>
+    <size>24787</size>
+    <md5>277dff708e8937cc5ac6a46cc7fa03d8</md5>
+    <crc32>dc26cb36</crc32>
+    <sha1>3a9297b6dcd6cea1fac764f1b1cec93d0735a236</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="tinytoonadventures.zip" source="original">
+    <mtime>1629515426</mtime>
+    <size>142394</size>
+    <md5>73ab6436031c06e4951ba6a8c35c50f6</md5>
+    <crc32>1269e286</crc32>
+    <sha1>2901967cd356cc034f35d1187e7279ed458e68fb</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="wreckingcrew.zip" source="original">
+    <mtime>1629515429</mtime>
+    <size>26274</size>
+    <md5>ddc46c202d8e165842d982f41fef3063</md5>
+    <crc32>75a68954</crc32>
+    <sha1>d8bf14947309d6894b2e5c58bda999138299eb1a</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+  <file name="zelda2theadventureoflink.zip" source="original">
+    <mtime>1629515431</mtime>
+    <size>86211</size>
+    <md5>12200011b1bada8ae178458c7aec23da</md5>
+    <crc32>f867cc44</crc32>
+    <sha1>5a4938063407054cfd2550b8d58681ac913bfd33</sha1>
+    <format>ZIP</format>
+    <viruscheck>1629515759</viruscheck>
+  </file>
+</files>
