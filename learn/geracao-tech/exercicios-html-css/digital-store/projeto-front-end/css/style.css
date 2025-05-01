@@ -377,7 +377,7 @@ button, .btn {
 /* Mobile Menu Overlay */
 .mobile-menu-overlay {
     position: fixed;
-    top: calc(64px + 1px);
+    top: 65px;
     left: -100%;
     width: 85%;
     height: 100vh;
