@@ -377,9 +377,9 @@ button, .btn {
 /* Mobile Menu Overlay */
 .mobile-menu-overlay {
     position: fixed;
-    top: 65px;
+    top: 0;
     left: -100%;
-    width: 85%;
+    width: 80%;
     height: 100vh;
     background-color: var(--white);
     z-index: 2000;
@@ -409,7 +409,7 @@ button, .btn {
 .mobile-menu-content {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 10vh);
+    height: 100%;
 }
 
 .mobile-menu-header {
