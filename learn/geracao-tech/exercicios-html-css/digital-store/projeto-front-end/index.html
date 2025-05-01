@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Store</title>
+	<!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <button class="mobile-menu-toggle" aria-label="Abrir menu">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="logo-search-bar">
+                <a href="index.html">
+                    <img src="images/icon-logo.svg" alt="Digital Store" />
+                    <span>Digital Store</span>
+                </a>
+                <div class="search-bar desktop-only">
+                    <input type="text" placeholder="Pesquisar produto..." />
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="user-actions">
+                <a href="#" class="register desktop-only">Cadastre-se</a>
+                <a href="#" class="login-btn desktop-only">Entrar</a>
+
+                <div class="mobile-search-icon">
+                    <button type="button" id="mobile-search-toggle">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <div class="cart-icon">
+                    <a href="#" id="cart-btn">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="cart-count">2</span>
+                    </a>
+                    <div class="cart-dropdown">
+                        <h3>Meu Carrinho</h3>
+                        <div class="cart-items">
+                            <div class="cart-item">
+                                <img src="images/tenis-kswiss.svg" alt="K-Swiss V8" />
+                                <div class="cart-item-info">
+                                    <h4>K-Swiss V8 - Masculino</h4>
+                                    <p>R$ 100,00</p>
+                                    <p>Qtd: 1</p>
+                                </div>
+                                <button class="remove-item"><i class="fa fa-times"></i></button>
+                            </div>
+                            <div class="cart-item">
+                                <img src="images/tenis-nike.svg" alt="Nike Revolution" />
+                                <div class="cart-item-info">
+                                    <h4>Nike Revolution 6</h4>
+                                    <p>R$ 219,00</p>
+                                    <p>Qtd: 1</p>
+                                </div>
+                                <button class="remove-item"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="cart-total">
+                            <p>Total: <span>R$ 319,00</span></p>
+                            <button class="checkout-btn">Finalizar Compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra de pesquisa para celular -->
+        <div class="mobile-search-bar">
+            <div class="container">
+                <input type="text" placeholder="Pesquisar produto..." />
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+
+        <nav class="main-nav desktop-only">
+            <div class="container">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Meus Pedidos</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Sobreposição de menu para celular -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <h2>Páginas</h2>
+                    <button class="mobile-menu-close">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+                <nav class="mobile-nav">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="#">Categorias</a></li>
+                        <li><a href="#">Meus Pedidos</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-footer">
+                    <a href="#" class="btn primary-btn mobile-login-btn">Entrar</a>
+                    <a href="#" class="mobile-register-link">Cadastre-se</a>
+                </div>
+            </div>
+        </div>
+    </header>
+	
+	<!-- Conteúdo Principal -->
+	<main>
+		<!-- Slider -->
+		<section class="slider">
+			<div class="container">
+			</div>
+		</section>
+
+        <!-- Coleções em destaque -->
+        <section class="featured-collections">
+            <div class="container">
+			</div>
+		</section>
+
+        <!-- Produtos em destaque -->
+        <section class="featured-products">
+            <div class="container">
+			</div>
+		</section>
+
+        <!-- Oferta especial -->
+        <section class="special-offer">
+            <div class="container">
+			</div>
+		</section>
+	</main>
+	
+	<!-- Rodapé -->
+	<footer class="footer">
+		<div class="container">
+		</div>
+	</footer>
+	
+	<!-- JavaScript -->
+	<script src="js/script.js"></script>
+</body>
+</html>
