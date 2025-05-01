@@ -380,7 +380,7 @@ button, .btn {
     top: calc(64px + 1px);
     left: -100%;
     width: 85%;
-    height: calc(100vh - 65px);
+    height: 100vh
     background-color: var(--white);
     z-index: 2000;
     transition: left 0.3s ease;
@@ -409,7 +409,7 @@ button, .btn {
 .mobile-menu-content {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: calc(100vh - 65px);
 }
 
 .mobile-menu-header {
