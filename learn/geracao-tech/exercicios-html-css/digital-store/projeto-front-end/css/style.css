@@ -409,7 +409,7 @@ button, .btn {
 .mobile-menu-content {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 7.5vh);
+    height: calc(100vh - 8vh);
 }
 
 .mobile-menu-header {
