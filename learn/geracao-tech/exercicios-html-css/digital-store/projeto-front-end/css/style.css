@@ -380,7 +380,7 @@ button, .btn {
     top: calc(64px + 1px);
     left: -100%;
     width: 85%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 65px);
     background-color: var(--white);
     z-index: 2000;
     transition: left 0.3s ease;
