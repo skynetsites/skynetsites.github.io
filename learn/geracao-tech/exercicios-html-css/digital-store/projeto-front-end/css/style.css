@@ -181,6 +181,7 @@ button, .btn {
 }
 
 .actions {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 1.5625rem; /* 25px */
@@ -229,8 +230,8 @@ button, .btn {
 
 .cart-dropdown {
     position: absolute;
-    top: 60%;
-    right: 0.9375rem; /* 15px */
+    top: 100%;
+    right: -0.9375rem; /* 15px */
     width: 18.75rem; /* 300px */
     background-color: var(--white);
     border-radius: 0.5rem; /* 8px */
@@ -289,13 +290,6 @@ button, .btn {
     color: var(--light-text);
     font-weight: 500;
     text-decoration: line-through;
-}
-
-.remove-item {
-    background: transparent;
-    border: none;
-    color: var(--light-text);
-    font-size: 0.875rem; /* 14px */
 }
 
 .cart-total {
