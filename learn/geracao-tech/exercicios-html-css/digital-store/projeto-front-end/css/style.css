@@ -112,9 +112,6 @@ button, .btn {
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0.9375rem; /* 15px */
 }
 
@@ -126,11 +123,11 @@ button, .btn {
     color: var(--text-color);
 }
 
-.logo-search-actions {
+.logo-search-actions {    
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    justify-content: space-between;
     gap: 1.875rem; /* 30px */
-    flex: auto;
 }
 
 .header-logo a {
@@ -620,7 +617,6 @@ button, .btn {
     }
     
     .search-bar {
-        order: 3;
         max-width: 100%;
         margin: 0.625rem 0; /* 10px 0 */
     }
@@ -657,6 +653,7 @@ button, .btn {
     
     .logo-search-actions {
         margin-bottom: 0;
+        gap: 1.25rem; /* 25px */
     }
     
     .header-logo a {
