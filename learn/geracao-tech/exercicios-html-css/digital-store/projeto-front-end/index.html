@@ -9,42 +9,46 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<!-- Css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <!-- Cabeçalho -->
     <header class="header">
         <div class="container header-container">
-            <button class="mobile-menu-toggle" aria-label="Abrir menu">
-                <i class="fa fa-bars"></i>
-            </button>
 
-            <div class="logo-search-bar">
-                <a href="index.html">
-                    <img src="images/icon-logo.svg" alt="Digital Store" />
-                    <span>Digital Store</span>
-                </a>
+            <div class="logo-search-actions">
+				<button class="mobile-menu-toggle" aria-label="Abrir menu">
+					<i class="fa fi-rr-menu-burger"></i>
+				</button>
+				<div class="header-logo">
+					<h1>
+						<a href="index.html">
+						<img src="images/icon-logo.svg" alt="Digital Store" />
+						<span>Digital Store</span>
+					</a>
+					</h1>
+				</div>
                 <div class="search-bar desktop-only">
                     <input type="text" placeholder="Pesquisar produto..." />
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
-            </div>
 
-            <div class="user-actions">
+            <div class="actions">
                 <a href="#" class="register desktop-only">Cadastre-se</a>
                 <a href="#" class="login-btn desktop-only">Entrar</a>
 
                 <div class="mobile-search-icon">
                     <button type="button" id="mobile-search-toggle">
-                        <i class="fa fa-search"></i>
+                        <i class="fi fi-rr-search"></i>
                     </button>
                 </div>
                 <div class="cart-icon">
                     <a href="#" id="cart-btn">
-                        <i class="fa fa-shopping-cart"></i>
+                        <i class="fi fi-rr-shopping-cart"></i>
                         <span class="cart-count">2</span>
                     </a>
-                    <div class="cart-dropdown">
+                    
+					<!-- Meu Carrinho -->
+					<div class="cart-dropdown">
                         <h3>Meu Carrinho</h3>
                         <div class="cart-items">
                             <div class="cart-item">
@@ -73,13 +77,14 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
 
-        <!-- Barra de pesquisa para celular -->
+        <!-- Pesquisa para celular -->
         <div class="mobile-search-bar">
             <div class="container">
                 <input type="text" placeholder="Pesquisar produto..." />
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <button type="submit"><i class="fi fi-rr-search"></i></button>
             </div>
         </div>
 
@@ -87,14 +92,14 @@
             <div class="container">
                 <ul>
                     <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#">Produtos</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
                     <li><a href="#">Categorias</a></li>
                     <li><a href="#">Meus Pedidos</a></li>
                 </ul>
             </div>
         </nav>
 
-        <!-- Sobreposição de menu para celular -->
+        <!-- Menu para celular -->
         <div class="mobile-menu-overlay">
             <div class="mobile-menu-content">
                 <div class="mobile-menu-header">
@@ -146,11 +151,58 @@
 		</section>
 	</main>
 	
-	<!-- Rodapé -->
-	<footer class="footer">
-		<div class="container">
-		</div>
-	</footer>
+	<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+						<a href="index.html">
+							<img src="images/icon-logo-branca.svg" alt="Digital Store">
+							<span>Digital Store</span>
+						</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Informação</h3>
+                        <ul>
+                            <li><a href="#">Sobre Digi Store</a></li>
+                            <li><a href="#">Segurança</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Trabalhe conosco</a></li>
+                            <li><a href="#">Meus Pedidos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Categorias</h3>
+                        <ul>
+                            <li><a href="#">Camisetas</a></li>
+                            <li><a href="#">Calças</a></li>
+                            <li><a href="#">Bonés</a></li>
+                            <li><a href="#">Headphones</a></li>
+                            <li><a href="#">Tênis</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column contact">
+                        <h3>Contato</h3>
+                        <address>
+                            Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161
+                        </address>
+                        <p>(85) 3051-3411</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022 Digital College</p>
+            </div>
+        </div>
+    </footer>
 	
 	<!-- JavaScript -->
 	<script src="js/script.js"></script>

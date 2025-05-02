@@ -7,11 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
 	// Botões para ações de alternar abrir e fechar
 	const menuToggles = document.querySelectorAll('.mobile-menu-toggle, .mobile-menu-close');
-    const searchToggleClose = document.getElementById('mobile-search-toggle');
-    const cartBtn = document.getElementById('cart-btn');
-    const overlay = document.querySelector('body');
-
-    // Abrir e fechar menu para celular
+	//const menuToggle = document.querySelector('.mobile-menu-toggle');
+	const searchToggleClose = document.getElementById('mobile-search-toggle');
+	const cartBtn = document.getElementById('cart-btn');
+	const overlay = document.querySelector('body');
+	
+	 // Abrir e fechar menu para celular
     if (menuToggles.length > 0 && overlay) {
         menuToggles.forEach(menuToggle => {
             menuToggle.addEventListener('click', function(e) {
@@ -28,15 +29,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Clique fora e fechar
         document.addEventListener('click', function(event) {
-            const isClickInside = overlay.contains(event.target) ||
-            Array.from(menuToggles).some(btn => btn.contains(event.target));
-            if (!isClickInside && overlay.classList.contains('menu-active')) {
+			const isClickInside =
+				event.target.closest('.mobile-menu-overlay') ||
+				event.target.closest('.mobile-menu-toggle');
+				//menuToggle.contains(event.target);
+
+			if (!isClickInside && overlay.classList.contains('menu-active')) {
                 //overlay.classList.remove('menu-active', 'overlay');
-                overlay.removeAttribute('class');
-            }
-        });
+				overlay.removeAttribute('class');
+			}
+		});
     }
-    
+
     // Abrir e fechar barra de pesquisa
     if (searchToggleClose && overlay) {
         searchToggleClose.addEventListener('click', function() {
@@ -52,13 +56,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Clique fora e fechar
         document.addEventListener('click', function(event) {
-            const isClickInside = overlay.contains(event.target) ||
-            Array.from(searchToggleClose).some(btn => btn.contains(event.target));
-            if (!isClickInside && overlay.classList.contains('search-bar-active')) {
+			const isClickInside =
+				event.target.closest('.mobile-search-bar') ||
+				searchToggleClose.contains(event.target);
+
+			if (!isClickInside && overlay.classList.contains('search-bar-active')) {
                 //overlay.classList.remove('search-bar-active', 'overlay');
-                overlay.removeAttribute('class');
-            }
-        });
+				overlay.removeAttribute('class');
+			}
+		});
     }
     
     // Abrir e fechar carrinho
@@ -76,13 +82,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Clique fora e fechar
         document.addEventListener('click', function(event) {
-            const isClickInside = overlay.contains(event.target) ||
-            Array.from(cartBtn).some(btn => btn.contains(event.target));
-            if (!isClickInside && overlay.classList.contains('cart-active')) {
-                //overlay.classList.remove('cart-active', 'overlay');
-                overlay.removeAttribute('class');
-            }
-        });
+			const isClickInside =
+				event.target.closest('.cart-dropdown') ||
+				cartBtn.contains(event.target);
+
+			if (!isClickInside && overlay.classList.contains('cart-active')) {
+				//overlay.classList.remove('cart-active', 'overlay');
+				overlay.removeAttribute('class');
+			}
+		});
     }
 	
 });
