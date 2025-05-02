@@ -125,7 +125,7 @@ button, .btn {
 
 .logo-search-actions {    
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     gap: 1.875rem; /* 30px */
 }
