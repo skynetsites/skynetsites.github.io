@@ -387,20 +387,28 @@ button, .btn {
     color: var(--text-color);
     font-weight: 500;
     position: relative;
+    transition: all 0.3s ease;
 }
 
+.main-nav li:hover a,
 .main-nav li.active a {
     color: var(--primary-color);
 }
 
-.main-nav li.active a::after {
+.main-nav li a::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 0.1875rem; /* 3px */
     background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.main-nav li:hover a::after,
+.main-nav li.active a::after {
+    width: 100%;
 }
 
 /* Mobile Menu Overlay */
