@@ -443,7 +443,7 @@ button, .btn {
 .mobile-menu-content {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 7rem); /* calc(100vh - 112px) */
+    height: calc(100vh - 5rem); /* calc(100vh - 80px) */
 }
 
 .mobile-menu-header {
@@ -687,7 +687,7 @@ button, .btn {
 
 .slider-controls {
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     left: 0;
     width: 100%;
     display: flex;
@@ -1031,12 +1031,12 @@ button, .btn {
 
    /* Slider para celular */
     .slider-container {
-        height: 40rem !important;
+        height: 43rem !important;
     }
     
     .slide-content {
         flex-direction: column-reverse !important;
-        justify-content: space-around !important;
+        justify-content: space-evenly !important;
         padding: 1.75rem 0 !important; /* 28px 0 */
     }
     
