@@ -443,7 +443,7 @@ button, .btn {
 .mobile-menu-content {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 5rem); /* calc(100vh - 80px) */
+    height: calc(100vh - 7rem); /* calc(100vh - 112px) */
 }
 
 .mobile-menu-header {
