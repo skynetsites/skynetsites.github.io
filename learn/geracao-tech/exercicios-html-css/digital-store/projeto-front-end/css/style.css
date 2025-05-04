@@ -528,7 +528,7 @@ button, .btn {
 .hero-slider {
     position: relative;
     margin-bottom: 60px;
-    background-color: #f5f5f5;
+    background-color: var(--gray-bg);
     overflow: hidden;
 }
 
