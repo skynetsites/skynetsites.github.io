@@ -642,7 +642,6 @@ button, .btn {
     left: -50px;
     z-index: 2;
     animation: slideImageIn 0.8s ease;
-    transform: rotate(-20deg);
 }
 
 @keyframes slideImageIn {
@@ -662,15 +661,7 @@ button, .btn {
     object-fit: contain;
     top:auto;
     left: auto;
-}
-
-@keyframes pulseImage {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-10px);
-    }
+    transform: rotate(-20deg);
 }
 
 .dots-pattern {
