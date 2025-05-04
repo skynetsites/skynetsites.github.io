@@ -329,10 +329,12 @@ button, .btn {
 }
 
 .mobile-search-bar {
-    display: none;
+    position: absolute;
+    width: 100%;
     padding: 0.625rem 0.9375rem; /* 10px 15px */
     background-color: var(--white);
     border-top: 0.0625rem solid var(--border-color); /* 1px */
+    display: none;
 }
 
 .search-bar-active .mobile-search-bar {
@@ -957,6 +959,14 @@ button, .btn {
         border-radius: 0.9375rem 0.9375rem 0 0; /* 15px 15px 0 0 */
         max-height: 70vh;
         overflow-y: auto;
+    }
+
+    .cart-item-info h4 {
+        font-size: 1rem; /* 16px */
+    }
+
+    .cart-item-info p {
+        font-size: 0.9375rem; /* 15px */
     }
     
     .footer-links {
