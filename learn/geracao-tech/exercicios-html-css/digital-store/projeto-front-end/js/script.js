@@ -5,14 +5,16 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
-	// Botões para ações de alternar abrir e fechar
+    // Botões para ações de alternar abrir e fechar
 	const menuToggles = document.querySelectorAll('.mobile-menu-toggle, .mobile-menu-close');
 	//const menuToggle = document.querySelector('.mobile-menu-toggle');
 	const searchToggleClose = document.getElementById('mobile-search-toggle');
 	const cartBtn = document.getElementById('cart-btn');
 	const overlay = document.querySelector('body');
 	
-	 // Abrir e fechar menu para celular
+	// Funcionalidades do menu para celular  
+    
+    // Abrir e fechar do menu para celular
     if (menuToggles.length > 0 && overlay) {
         menuToggles.forEach(menuToggle => {
             menuToggle.addEventListener('click', function(e) {
@@ -41,7 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
     }
 
-    // Abrir e fechar barra de pesquisa
+    // Funcionalidades da barra de pesquisa
+
+    // Abrir e fechar da barra de pesquisa
     if (searchToggleClose && overlay) {
         searchToggleClose.addEventListener('click', function() {
             if (overlay.classList.contains('search-bar-active')) {
@@ -66,8 +70,10 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		});
     }
+
+    // Funcionalidades do carrinho
     
-    // Abrir e fechar carrinho
+    // Abrir e fechar do carrinho
     if (cartBtn && overlay) {
         cartBtn.addEventListener('click', function() {
             if (overlay.classList.contains('cart-active')) {
@@ -93,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
     }
 
-    // Hero Slider Functionality
+    // Funcionalidades do slider
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
     const prevBtn = document.createElement('button');
@@ -102,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let slideInterval;
     let isAnimating = false;
     
-    // Add navigation arrows to slider
+    // Adicionar setas de navegação para slider
     function addNavButtons() {
         prevBtn.className = 'slider-nav prev';
         nextBtn.className = 'slider-nav next';
@@ -130,18 +136,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Initialize slider
+    // Inicializar slider
     function initSlider() {
-        // Set first slide as active
+        // Definir o primeiro slide como ativo
         showSlide(currentSlide);
         
-        // Add navigation buttons
+        // Adicionar setas de navegação
         //addNavButtons();
         
-        // Start automatic slideshow
+        // Iniciar o slider automática
         startSlideshow();
         
-        // Add click event to dots
+        // Adicionar ação de clique aos pontos de navegação
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 if (!isAnimating && currentSlide !== index) {
@@ -152,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Add keyboard navigation
+        // Adicionar ação de navegação por teclado
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowLeft') {
                 if (!isAnimating) {
@@ -167,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Pause slideshow on hover
+        // Pausar o slider ao passar o mouse
         const sliderContainer = document.querySelector('.slider-container');
         if (sliderContainer) {
             sliderContainer.addEventListener('mouseenter', () => {
@@ -180,27 +186,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Go to previous slide
+    // Volta para o slide anterior
     function goToPrevSlide() {
         currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         showSlide(currentSlide);
     }
     
-    // Go to next slide
+    // Vai para o próximo slide
     function goToNextSlide() {
         currentSlide = (currentSlide + 1) % slides.length;
         showSlide(currentSlide);
     }
     
-    // Show specific slide with animation
+    // Mostrar o slide atual com animação
     function showSlide(index) {
         if (isAnimating) return;
         isAnimating = true;
         
-        // Get current active slide
+        // Chama o slide ativo
         const activeSlide = document.querySelector('.slide.active');
         
-        // Hide current active slide with fade out
+        // Esconde o slide ativo com efeito fade out (desaparecendo)
         if (activeSlide) {
             activeSlide.classList.add('fade-out');
             activeSlide.classList.remove('active');
@@ -210,12 +216,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 500);
         }
         
-        // Remove active class from all dots
+        // Remover a classe .active de todos os pontos de navegação
         dots.forEach(dot => {
             dot.classList.remove('active');
         });
         
-        // Show new slide with fade in
+        // Mostrar novo slide com efeito fade in (aparecendo)
         setTimeout(() => {
             slides[index].classList.add('active', 'fade-in');
             dots[index].classList.add('active');
@@ -227,21 +233,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 50);
     }
     
-    // Start automatic slideshow
+    // Iniciar o slider automática
     function startSlideshow() {
         clearInterval(slideInterval);
         slideInterval = setInterval(() => {
             goToNextSlide();
-        }, 5000); // Change slide every 5 seconds
+        }, 5000);
     }
     
-    // Reset slideshow timer
+    // Reiniciar o intervalo do slider
     function resetSlideshow() {
         clearInterval(slideInterval);
         startSlideshow();
     }
     
-    // Initialize slider if elements exist
+    // Iniciar slider se tiver elementos
     if (slides.length > 0 && dots.length > 0) {
         initSlider();
     }
