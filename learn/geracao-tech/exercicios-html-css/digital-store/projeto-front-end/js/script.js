@@ -92,5 +92,158 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		});
     }
+
+    // Hero Slider Functionality
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.createElement('button');
+    const nextBtn = document.createElement('button');
+    let currentSlide = 0;
+    let slideInterval;
+    let isAnimating = false;
+    
+    // Add navigation arrows to slider
+    function addNavButtons() {
+        prevBtn.className = 'slider-nav prev';
+        nextBtn.className = 'slider-nav next';
+        prevBtn.innerHTML = '<i class="fa fa-chevron-left"></i>';
+        nextBtn.innerHTML = '<i class="fa fa-chevron-right"></i>';
+        
+        const sliderContainer = document.querySelector('.slider-container');
+        if (sliderContainer) {
+            sliderContainer.appendChild(prevBtn);
+            sliderContainer.appendChild(nextBtn);
+        }
+        
+        prevBtn.addEventListener('click', () => {
+            if (!isAnimating) {
+                goToPrevSlide();
+                resetSlideshow();
+            }
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            if (!isAnimating) {
+                goToNextSlide();
+                resetSlideshow();
+            }
+        });
+    }
+    
+    // Initialize slider
+    function initSlider() {
+        // Set first slide as active
+        showSlide(currentSlide);
+        
+        // Add navigation buttons
+        //addNavButtons();
+        
+        // Start automatic slideshow
+        startSlideshow();
+        
+        // Add click event to dots
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                if (!isAnimating && currentSlide !== index) {
+                    currentSlide = index;
+                    showSlide(currentSlide);
+                    resetSlideshow();
+                }
+            });
+        });
+        
+        // Add keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                if (!isAnimating) {
+                    goToPrevSlide();
+                    resetSlideshow();
+                }
+            } else if (e.key === 'ArrowRight') {
+                if (!isAnimating) {
+                    goToNextSlide();
+                    resetSlideshow();
+                }
+            }
+        });
+        
+        // Pause slideshow on hover
+        const sliderContainer = document.querySelector('.slider-container');
+        if (sliderContainer) {
+            sliderContainer.addEventListener('mouseenter', () => {
+                clearInterval(slideInterval);
+            });
+            
+            sliderContainer.addEventListener('mouseleave', () => {
+                startSlideshow();
+            });
+        }
+    }
+    
+    // Go to previous slide
+    function goToPrevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+    
+    // Go to next slide
+    function goToNextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+    
+    // Show specific slide with animation
+    function showSlide(index) {
+        if (isAnimating) return;
+        isAnimating = true;
+        
+        // Get current active slide
+        const activeSlide = document.querySelector('.slide.active');
+        
+        // Hide current active slide with fade out
+        if (activeSlide) {
+            activeSlide.classList.add('fade-out');
+            activeSlide.classList.remove('active');
+            
+            setTimeout(() => {
+                activeSlide.classList.remove('fade-out');
+            }, 500);
+        }
+        
+        // Remove active class from all dots
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+        
+        // Show new slide with fade in
+        setTimeout(() => {
+            slides[index].classList.add('active', 'fade-in');
+            dots[index].classList.add('active');
+            
+            setTimeout(() => {
+                slides[index].classList.remove('fade-in');
+                isAnimating = false;
+            }, 500);
+        }, 50);
+    }
+    
+    // Start automatic slideshow
+    function startSlideshow() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(() => {
+            goToNextSlide();
+        }, 5000); // Change slide every 5 seconds
+    }
+    
+    // Reset slideshow timer
+    function resetSlideshow() {
+        clearInterval(slideInterval);
+        startSlideshow();
+    }
+    
+    // Initialize slider if elements exist
+    if (slides.length > 0 && dots.length > 0) {
+        initSlider();
+    }
 	
 });
