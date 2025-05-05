@@ -262,6 +262,7 @@ button, .btn {
 
 .cart-item button {
     padding: 0;
+    background-color: var(--transparent-bg);
 }
 
 .cart-item-info {
@@ -928,15 +929,10 @@ button, .btn {
     
     .cart-dropdown {
         position: fixed;
-        top: 5rem; /* 80px */
-        bottom: auto;
-        left: 15px;
-        right: 15px;
-        border-radius: 0.9375rem;
-        max-height: 70vh;
-        margin-inline: auto;
-        width: fit-content;
-        overflow-y: auto;
+        top: 25%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%, -25%);
     }
 
     .cart-item-info h4 {
