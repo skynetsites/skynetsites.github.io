@@ -450,9 +450,9 @@ button, .btn {
 
 .mobile-menu-close {
     background: transparent;
-    border: none;
     font-size: 1.25rem; /* 20px */
     color: var(--text-color);
+    padding: 0;
 }
 
 .mobile-nav {
