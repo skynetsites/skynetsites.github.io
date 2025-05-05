@@ -251,13 +251,17 @@ button, .btn {
     display: flex;
     padding: 0.625rem 0; /* 10px 0 */
     border-bottom: 0.0625rem solid var(--border-color); /* 1px */
+    gap: 0.9375rem; /* 15px */
 }
 
 .cart-item img {
     background-color: var(--secondary-color);
     width: 3.75rem; /* 60px */
     object-fit: cover;
-    margin-right: 0.625rem; /* 10px */
+}
+
+.cart-item button {
+    padding: 0;
 }
 
 .cart-item-info {
