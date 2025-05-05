@@ -297,7 +297,6 @@ button, .btn {
 }
 
 .cart-total span {
-    font-weight: 500;
     color: var(--primary-color);
     float: right;
 }
