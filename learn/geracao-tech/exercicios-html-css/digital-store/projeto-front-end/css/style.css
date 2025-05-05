@@ -25,12 +25,11 @@
     --text-color: #474747;
     --gray-bg: #f9f9f9;
     --dark-bg: #1f1f1f;
+    --transparent-bg: #00000000;
     --light-text: #8f8f8f;
     --dark-text: #1f1f1f;
     --white: #ffffff;
     --black: #000000;
-	
-	--opacity: 0.1;
 }
 
 body {
@@ -62,17 +61,16 @@ img {
 button, .btn {
     cursor: pointer;
     border: none;
-    outline: none;
-    font-size: 1rem; /* 16px */
+    font-size: 0.875rem; /* 14px */
+    font-weight: 700;
+    text-align: center;
+    padding: 0.75rem 1.5rem; /* 12px 24px */
+    border-radius: 0.375rem; /* 6px */
     transition: all 0.3s ease;
 }
 
 .btn {
     display: inline-block;
-    padding: 0.75rem 1.5rem; /* 12px 24px */
-    border-radius: 0.375rem; /* 6px */
-    font-weight: 600;
-    text-align: center;
 }
 
 .primary-btn {
@@ -81,7 +79,7 @@ button, .btn {
 }
 
 .primary-btn:hover {
-    background-color: #a51a5e;
+    background-color: var(--tertiary-color);
 }
 
 .secondary-btn {
@@ -91,7 +89,7 @@ button, .btn {
 }
 
 .secondary-btn:hover {
-    background-color: #f9f0f5;
+    background-color: var(--gray-bg);
 }
 
 /* Utilidade */
@@ -118,7 +116,7 @@ button, .btn {
 
 .mobile-menu-toggle {
     display: none;
-    background: transparent;
+    background: var(--transparent-bg);
     border: none;
     font-size: 1.5rem; /* 24px */
     color: var(--text-color);
@@ -141,7 +139,6 @@ button, .btn {
 }
 
 .header-logo img {
-	height: 2rem;  /* 32px */
     width: 2rem;  /* 32px */
 }
 
@@ -164,9 +161,9 @@ button, .btn {
     right: 0.625rem; /* 10px */
     top: 50%;
     transform: translateY(-50%);
-    background: transparent;
-    border: none;
+    background: var(--transparent-bg);
     color: var(--light-text);
+    padding: 0;
 }
 
 .mobile-search-icon {
@@ -174,10 +171,9 @@ button, .btn {
 }
 
 .mobile-search-icon button {
-    background: transparent;
-    border: none;
+    background: var(--transparent-bg);
     font-size: 1.25rem; /* 20px */
-    color: var(--text-color);
+    padding: 0;
 }
 
 .actions {
@@ -185,9 +181,6 @@ button, .btn {
     display: flex;
     align-items: center;
     gap: 1.5625rem; /* 25px */
-}
-.register, .login-btn {
-    font-size: 1rem; /* 16px */
 }
 
 .register {
@@ -198,8 +191,6 @@ button, .btn {
 .login-btn {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 0.5rem 1.25rem; /* 8px 20px */
-    border-radius: 0.25rem; /* 4px */
 }
 
 .cart-icon {
@@ -265,7 +256,6 @@ button, .btn {
 .cart-item img {
     background-color: var(--secondary-color);
     width: 3.75rem; /* 60px */
-    height: 3.75rem; /* 60px */
     object-fit: cover;
     margin-right: 0.625rem; /* 10px */
 }
@@ -322,16 +312,13 @@ button, .btn {
 .checkout-btn {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 0.625rem 0.9375rem; /* 10px 15px */
-    border-radius: 0.25rem; /* 4px */
-    font-size: 0.875rem; /* 14px */
-    font-weight: 700;
 }
 
 .mobile-search-bar {
     position: absolute;
     width: 100%;
-    padding: 0.625rem 0.9375rem; /* 10px 15px */
+    padding-top: 0.625rem; /* 10px */
+    padding-bottom: 0.625rem; /* 10px */
     background-color: var(--white);
     border-top: 0.0625rem solid var(--border-color); /* 1px */
     display: none;
@@ -359,9 +346,9 @@ button, .btn {
     right: 1.5625rem; /* 25px */
     transform: translateY(-50%);
     background: transparent;
-    border: none;
     color: var(--light-text);
     font-size: 1rem; /* 16px */
+    padding: 0;
 }
 
 .main-nav {
@@ -512,7 +499,7 @@ button, .btn {
 }
 
 .mobile-login-btn, .mobile-register-link {
-    font-size: 1.125rem; /* 18px */
+    font-size: 1rem; /* 16px */
 }
 
 .mobile-login-btn {
@@ -536,7 +523,7 @@ button, .btn {
 
 .slider-container {
     position: relative;
-    height: 500px;
+    height: 550px;
 }
 
 .slide {
@@ -596,8 +583,7 @@ button, .btn {
 }
 
 .slide-text {
-    flex: 0 0 45%;
-    padding-right: 20px;
+    flex: 0 0 47.5%;
     animation: slideTextIn 0.8s ease;
 }
 
@@ -620,6 +606,10 @@ button, .btn {
     margin-bottom: 0.625rem; /* 10px */
 }
 
+.slide-text h3, .slide-text p {
+    inline-size: 80%;
+}
+
 .slide-text h3 {
     font-size: 58px;
     line-height: 62px;
@@ -633,13 +623,13 @@ button, .btn {
 }
 
 .slide-image {
-    flex: 0 0 45%;
+    flex: 0 0 47.5%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: -50px;
-    left: -50px;
+    top: -25px;
+    left: -110px;
     z-index: 2;
     animation: slideImageIn 0.8s ease;
 }
@@ -656,24 +646,23 @@ button, .btn {
 }
 
 .slide-image img {
-    max-width: 100%;
-    max-height: 300px;
     object-fit: contain;
-    top:auto;
-    left: auto;
     transform: rotate(-20deg);
+    max-width: 90%;
+    margin-left: -10%;
 }
 
 .dots-pattern {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 40px;
+    right: 0;
     width: 150px;
     height: 150px;
     background-image: radial-gradient(#F6AA1C 2px, transparent 2px);
     background-size: 15px 15px;
     z-index: 1;
     animation: fadeIn 1s ease;
+    border-radius: 100%;
 }
 
 .slider-controls {
@@ -817,7 +806,7 @@ button, .btn {
     width: 2.25rem; /* 36px */
     height: 2.25rem; /* 36px */
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, var(--opacity));
+    background-color: rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
 }
 
@@ -869,10 +858,6 @@ button, .btn {
         flex-wrap: wrap;
     }
     
-    .logo-search-actions {
-        margin-bottom: 0;
-    }
-    
     .search-bar {
         max-width: 100%;
         margin: 0.625rem 0; /* 10px 0 */
@@ -889,6 +874,10 @@ button, .btn {
     .footer-logo {
         margin-bottom: 1.875rem; /* 30px */
     }
+
+    .slide-text h3, .slide-text p {
+        inline-size: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -902,6 +891,7 @@ button, .btn {
     
     .mobile-menu-toggle {
         display: block;
+        padding: 0;
     }
     
     .header-container {
@@ -909,7 +899,6 @@ button, .btn {
     }
     
     .logo-search-actions {
-        margin-bottom: 0;
         gap: 0.625rem; /* 10px */
     }
     
@@ -1038,22 +1027,21 @@ button, .btn {
     }
     
     .slide-image {
-        flex: 0 0 15%;
-        height: auto;
+        flex: 0;
         top: auto;
-        left: -5.7%;
+        left: auto;
     }
-
     .slide-image img {
         max-width: 80%;
     }
-    
+
     .slider-nav {
         display: none !important;
     }
 
     .slide-text .btn {
         width: 100%;
+        font-size: 1rem; /* 16px */
     }
     
     /* Coleções para celular */

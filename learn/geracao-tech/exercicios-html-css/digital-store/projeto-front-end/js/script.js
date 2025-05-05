@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	const cartBtn = document.getElementById('cart-btn');
 	const overlay = document.querySelector('body');
 	
-    // Funcionalidades do menu para celular  
+	// Funcionalidades do menu para celular  
     
     // Abrir e fechar do menu para celular
     if (menuToggles.length > 0 && overlay) {
